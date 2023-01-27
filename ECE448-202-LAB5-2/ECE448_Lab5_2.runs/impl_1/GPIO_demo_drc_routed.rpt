@@ -1,0 +1,156 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Tue Nov 16 20:41:59 2021
+| Host         : matthew-Aspire-A515-54 running 64-bit Ubuntu 20.04.3 LTS
+| Command      : report_drc -file GPIO_demo_drc_routed.rpt -pb GPIO_demo_drc_routed.pb -rpx GPIO_demo_drc_routed.rpx
+| Design       : GPIO_demo
+| Device       : xc7a35tcpg236-1
+| Speed File   : -1
+| Design State : Fully Routed
+---------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 24
++----------+----------+-------------------+------------+
+| Rule     | Severity | Description       | Violations |
++----------+----------+-------------------+------------+
+| PDRC-153 | Warning  | Gated clock check | 24         |
++----------+----------+-------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+PDRC-153#1 Warning
+Gated clock check  
+Net Inst_vga_ctrl/mBALL_X_POS_REG_reg[0]__2_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin Inst_vga_ctrl/mBALL_X_POS_REG_reg[0]__2_LDC_i_1/O, cell Inst_vga_ctrl/mBALL_X_POS_REG_reg[0]__2_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#2 Warning
+Gated clock check  
+Net Inst_vga_ctrl/mBALL_X_POS_REG_reg[10]__2_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin Inst_vga_ctrl/mBALL_X_POS_REG_reg[10]__2_LDC_i_1/O, cell Inst_vga_ctrl/mBALL_X_POS_REG_reg[10]__2_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#3 Warning
+Gated clock check  
+Net Inst_vga_ctrl/mBALL_X_POS_REG_reg[11]__2_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin Inst_vga_ctrl/mBALL_X_POS_REG_reg[11]__2_LDC_i_1/O, cell Inst_vga_ctrl/mBALL_X_POS_REG_reg[11]__2_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#4 Warning
+Gated clock check  
+Net Inst_vga_ctrl/mBALL_X_POS_REG_reg[1]__2_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin Inst_vga_ctrl/mBALL_X_POS_REG_reg[1]__2_LDC_i_1/O, cell Inst_vga_ctrl/mBALL_X_POS_REG_reg[1]__2_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#5 Warning
+Gated clock check  
+Net Inst_vga_ctrl/mBALL_X_POS_REG_reg[2]__2_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin Inst_vga_ctrl/mBALL_X_POS_REG_reg[2]__2_LDC_i_1/O, cell Inst_vga_ctrl/mBALL_X_POS_REG_reg[2]__2_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#6 Warning
+Gated clock check  
+Net Inst_vga_ctrl/mBALL_X_POS_REG_reg[3]__2_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin Inst_vga_ctrl/mBALL_X_POS_REG_reg[3]__2_LDC_i_1/O, cell Inst_vga_ctrl/mBALL_X_POS_REG_reg[3]__2_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#7 Warning
+Gated clock check  
+Net Inst_vga_ctrl/mBALL_X_POS_REG_reg[4]__2_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin Inst_vga_ctrl/mBALL_X_POS_REG_reg[4]__2_LDC_i_1/O, cell Inst_vga_ctrl/mBALL_X_POS_REG_reg[4]__2_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#8 Warning
+Gated clock check  
+Net Inst_vga_ctrl/mBALL_X_POS_REG_reg[5]__2_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin Inst_vga_ctrl/mBALL_X_POS_REG_reg[5]__2_LDC_i_1/O, cell Inst_vga_ctrl/mBALL_X_POS_REG_reg[5]__2_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#9 Warning
+Gated clock check  
+Net Inst_vga_ctrl/mBALL_X_POS_REG_reg[6]__2_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin Inst_vga_ctrl/mBALL_X_POS_REG_reg[6]__2_LDC_i_1/O, cell Inst_vga_ctrl/mBALL_X_POS_REG_reg[6]__2_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#10 Warning
+Gated clock check  
+Net Inst_vga_ctrl/mBALL_X_POS_REG_reg[7]__2_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin Inst_vga_ctrl/mBALL_X_POS_REG_reg[7]__2_LDC_i_1/O, cell Inst_vga_ctrl/mBALL_X_POS_REG_reg[7]__2_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#11 Warning
+Gated clock check  
+Net Inst_vga_ctrl/mBALL_X_POS_REG_reg[8]__2_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin Inst_vga_ctrl/mBALL_X_POS_REG_reg[8]__2_LDC_i_1/O, cell Inst_vga_ctrl/mBALL_X_POS_REG_reg[8]__2_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#12 Warning
+Gated clock check  
+Net Inst_vga_ctrl/mBALL_X_POS_REG_reg[9]__2_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin Inst_vga_ctrl/mBALL_X_POS_REG_reg[9]__2_LDC_i_1/O, cell Inst_vga_ctrl/mBALL_X_POS_REG_reg[9]__2_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#13 Warning
+Gated clock check  
+Net Inst_vga_ctrl/mBALL_Y_POS_REG_reg[0]__2_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin Inst_vga_ctrl/mBALL_Y_POS_REG_reg[0]__2_LDC_i_1/O, cell Inst_vga_ctrl/mBALL_Y_POS_REG_reg[0]__2_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#14 Warning
+Gated clock check  
+Net Inst_vga_ctrl/mBALL_Y_POS_REG_reg[10]__2_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin Inst_vga_ctrl/mBALL_Y_POS_REG_reg[10]__2_LDC_i_1/O, cell Inst_vga_ctrl/mBALL_Y_POS_REG_reg[10]__2_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#15 Warning
+Gated clock check  
+Net Inst_vga_ctrl/mBALL_Y_POS_REG_reg[11]__2_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin Inst_vga_ctrl/mBALL_Y_POS_REG_reg[11]__2_LDC_i_1/O, cell Inst_vga_ctrl/mBALL_Y_POS_REG_reg[11]__2_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#16 Warning
+Gated clock check  
+Net Inst_vga_ctrl/mBALL_Y_POS_REG_reg[1]__2_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin Inst_vga_ctrl/mBALL_Y_POS_REG_reg[1]__2_LDC_i_1/O, cell Inst_vga_ctrl/mBALL_Y_POS_REG_reg[1]__2_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#17 Warning
+Gated clock check  
+Net Inst_vga_ctrl/mBALL_Y_POS_REG_reg[2]__2_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin Inst_vga_ctrl/mBALL_Y_POS_REG_reg[2]__2_LDC_i_1/O, cell Inst_vga_ctrl/mBALL_Y_POS_REG_reg[2]__2_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#18 Warning
+Gated clock check  
+Net Inst_vga_ctrl/mBALL_Y_POS_REG_reg[3]__2_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin Inst_vga_ctrl/mBALL_Y_POS_REG_reg[3]__2_LDC_i_1/O, cell Inst_vga_ctrl/mBALL_Y_POS_REG_reg[3]__2_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#19 Warning
+Gated clock check  
+Net Inst_vga_ctrl/mBALL_Y_POS_REG_reg[4]__2_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin Inst_vga_ctrl/mBALL_Y_POS_REG_reg[4]__2_LDC_i_1/O, cell Inst_vga_ctrl/mBALL_Y_POS_REG_reg[4]__2_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#20 Warning
+Gated clock check  
+Net Inst_vga_ctrl/mBALL_Y_POS_REG_reg[5]__2_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin Inst_vga_ctrl/mBALL_Y_POS_REG_reg[5]__2_LDC_i_1/O, cell Inst_vga_ctrl/mBALL_Y_POS_REG_reg[5]__2_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#21 Warning
+Gated clock check  
+Net Inst_vga_ctrl/mBALL_Y_POS_REG_reg[6]__2_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin Inst_vga_ctrl/mBALL_Y_POS_REG_reg[6]__2_LDC_i_1/O, cell Inst_vga_ctrl/mBALL_Y_POS_REG_reg[6]__2_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#22 Warning
+Gated clock check  
+Net Inst_vga_ctrl/mBALL_Y_POS_REG_reg[7]__2_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin Inst_vga_ctrl/mBALL_Y_POS_REG_reg[7]__2_LDC_i_1/O, cell Inst_vga_ctrl/mBALL_Y_POS_REG_reg[7]__2_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#23 Warning
+Gated clock check  
+Net Inst_vga_ctrl/mBALL_Y_POS_REG_reg[8]__2_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin Inst_vga_ctrl/mBALL_Y_POS_REG_reg[8]__2_LDC_i_1/O, cell Inst_vga_ctrl/mBALL_Y_POS_REG_reg[8]__2_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#24 Warning
+Gated clock check  
+Net Inst_vga_ctrl/mBALL_Y_POS_REG_reg[9]__2_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin Inst_vga_ctrl/mBALL_Y_POS_REG_reg[9]__2_LDC_i_1/O, cell Inst_vga_ctrl/mBALL_Y_POS_REG_reg[9]__2_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+

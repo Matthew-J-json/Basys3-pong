@@ -1,0 +1,184 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Tue Nov 16 20:41:44 2021
+| Host         : matthew-Aspire-A515-54 running 64-bit Ubuntu 20.04.3 LTS
+| Command      : report_control_sets -verbose -file GPIO_demo_control_sets_placed.rpt
+| Design       : GPIO_demo
+| Device       : xc7a35t
+--------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |   106 |
+|    Minimum number of control sets                        |   106 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   598 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |   106 |
+| >= 0 to < 4        |    72 |
+| >= 4 to < 6        |     5 |
+| >= 6 to < 8        |     3 |
+| >= 8 to < 10       |     2 |
+| >= 10 to < 12      |     2 |
+| >= 12 to < 14      |     7 |
+| >= 14 to < 16      |     2 |
+| >= 16              |    13 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             173 |           58 |
+| No           | No                    | Yes                    |              48 |           48 |
+| No           | Yes                   | No                     |             298 |           98 |
+| Yes          | No                    | No                     |              40 |           14 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             115 |           33 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------------------------------+----------------------------------------------------------------------------+----------------------------------------------------------------------------+------------------+----------------+--------------+
+|                      Clock Signal                     |                                Enable Signal                               |                              Set/Reset Signal                              | Slice Load Count | Bel Load Count | Bels / Slice |
++-------------------------------------------------------+----------------------------------------------------------------------------+----------------------------------------------------------------------------+------------------+----------------+--------------+
+|  p_1_in_0                                             |                                                                            | Inst_vga_ctrl/mBALL_Y_POS_REG_reg[10]__2_LDC_i_2_n_0                       |                1 |              1 |         1.00 |
+|  p_1_in_0                                             |                                                                            | Inst_vga_ctrl/mBALL_X_POS_REG_reg[6]__2_LDC_i_2_n_0                        |                1 |              1 |         1.00 |
+|  p_1_in_0                                             |                                                                            | Inst_vga_ctrl/mBALL_X_POS_REG_reg[6]__2_LDC_i_1_n_0                        |                1 |              1 |         1.00 |
+|  p_1_in_0                                             |                                                                            | Inst_vga_ctrl/mBALL_X_POS_REG_reg[5]__2_LDC_i_2_n_0                        |                1 |              1 |         1.00 |
+|  p_1_in_0                                             |                                                                            | Inst_vga_ctrl/mBALL_X_POS_REG_reg[0]__2_LDC_i_1_n_0                        |                1 |              1 |         1.00 |
+|  p_1_in_0                                             |                                                                            | Inst_vga_ctrl/mBALL_X_POS_REG_reg[11]__2_LDC_i_2_n_0                       |                1 |              1 |         1.00 |
+|  p_1_in_0                                             |                                                                            | Inst_vga_ctrl/mBALL_X_POS_REG_reg[11]__2_LDC_i_1_n_0                       |                1 |              1 |         1.00 |
+|  p_1_in_0                                             |                                                                            | Inst_vga_ctrl/mBALL_X_POS_REG_reg[2]__2_LDC_i_1_n_0                        |                1 |              1 |         1.00 |
+|  p_1_in_0                                             |                                                                            | Inst_vga_ctrl/mBALL_X_POS_REG_reg[2]__2_LDC_i_2_n_0                        |                1 |              1 |         1.00 |
+|  p_1_in_0                                             |                                                                            | Inst_vga_ctrl/mBALL_X_POS_REG_reg[1]__2_LDC_i_2_n_0                        |                1 |              1 |         1.00 |
+|  p_1_in_0                                             |                                                                            | Inst_vga_ctrl/mBALL_X_POS_REG_reg[3]__2_LDC_i_1_n_0                        |                1 |              1 |         1.00 |
+|  Inst_vga_ctrl/mBALL_X_POS_REG_reg[10]__2_LDC_i_1_n_0 |                                                                            | Inst_vga_ctrl/mBALL_X_POS_REG_reg[10]__2_LDC_i_2_n_0                       |                1 |              1 |         1.00 |
+|  Inst_vga_ctrl/mBALL_Y_POS_REG_reg[4]__2_LDC_i_1_n_0  |                                                                            | Inst_vga_ctrl/mBALL_Y_POS_REG_reg[4]__2_LDC_i_2_n_0                        |                1 |              1 |         1.00 |
+|  p_1_in_0                                             |                                                                            | Inst_vga_ctrl/mBALL_Y_POS_REG_reg[10]__2_LDC_i_1_n_0                       |                1 |              1 |         1.00 |
+|  p_1_in_0                                             |                                                                            | Inst_vga_ctrl/mBALL_X_POS_REG_reg[7]__2_LDC_i_2_n_0                        |                1 |              1 |         1.00 |
+|  p_1_in_0                                             |                                                                            | Inst_vga_ctrl/mBALL_X_POS_REG_reg[7]__2_LDC_i_1_n_0                        |                1 |              1 |         1.00 |
+|  p_1_in_0                                             |                                                                            | Inst_vga_ctrl/mBALL_X_POS_REG_reg[5]__2_LDC_i_1_n_0                        |                1 |              1 |         1.00 |
+|  p_1_in_0                                             |                                                                            | Inst_vga_ctrl/mBALL_X_POS_REG_reg[4]__2_LDC_i_2_n_0                        |                1 |              1 |         1.00 |
+|  p_1_in_0                                             |                                                                            | Inst_vga_ctrl/mBALL_X_POS_REG_reg[4]__2_LDC_i_1_n_0                        |                1 |              1 |         1.00 |
+|  p_1_in_0                                             |                                                                            | Inst_vga_ctrl/mBALL_Y_POS_REG_reg[9]__2_LDC_i_2_n_0                        |                1 |              1 |         1.00 |
+|  p_1_in_0                                             |                                                                            | Inst_vga_ctrl/mBALL_Y_POS_REG_reg[9]__2_LDC_i_1_n_0                        |                1 |              1 |         1.00 |
+|  p_1_in_0                                             |                                                                            | Inst_vga_ctrl/mBALL_Y_POS_REG_reg[8]__2_LDC_i_2_n_0                        |                1 |              1 |         1.00 |
+|  Inst_vga_ctrl/mBALL_Y_POS_REG_reg[9]__2_LDC_i_1_n_0  |                                                                            | Inst_vga_ctrl/mBALL_Y_POS_REG_reg[9]__2_LDC_i_2_n_0                        |                1 |              1 |         1.00 |
+|  Inst_vga_ctrl/mBALL_X_POS_REG_reg[6]__2_LDC_i_1_n_0  |                                                                            | Inst_vga_ctrl/mBALL_X_POS_REG_reg[6]__2_LDC_i_2_n_0                        |                1 |              1 |         1.00 |
+|  Inst_vga_ctrl/mBALL_X_POS_REG_reg[0]__2_LDC_i_1_n_0  |                                                                            | Inst_vga_ctrl/mBALL_X_POS_REG_reg[0]__2_LDC_i_2_n_0                        |                1 |              1 |         1.00 |
+|  Inst_vga_ctrl/mBALL_X_POS_REG_reg[11]__2_LDC_i_1_n_0 |                                                                            | Inst_vga_ctrl/mBALL_X_POS_REG_reg[11]__2_LDC_i_2_n_0                       |                1 |              1 |         1.00 |
+|  Inst_vga_ctrl/mBALL_X_POS_REG_reg[2]__2_LDC_i_1_n_0  |                                                                            | Inst_vga_ctrl/mBALL_X_POS_REG_reg[2]__2_LDC_i_2_n_0                        |                1 |              1 |         1.00 |
+|  Inst_vga_ctrl/mBALL_X_POS_REG_reg[3]__2_LDC_i_1_n_0  |                                                                            | Inst_vga_ctrl/mBALL_X_POS_REG_reg[3]__2_LDC_i_2_n_0                        |                1 |              1 |         1.00 |
+|  Inst_vga_ctrl/mBALL_Y_POS_REG_reg[11]__2_LDC_i_1_n_0 |                                                                            | Inst_vga_ctrl/mBALL_Y_POS_REG_reg[11]__2_LDC_i_2_n_0                       |                1 |              1 |         1.00 |
+|  Inst_vga_ctrl/mBALL_Y_POS_REG_reg[10]__2_LDC_i_1_n_0 |                                                                            | Inst_vga_ctrl/mBALL_Y_POS_REG_reg[10]__2_LDC_i_2_n_0                       |                1 |              1 |         1.00 |
+|  Inst_vga_ctrl/mBALL_X_POS_REG_reg[7]__2_LDC_i_1_n_0  |                                                                            | Inst_vga_ctrl/mBALL_X_POS_REG_reg[7]__2_LDC_i_2_n_0                        |                1 |              1 |         1.00 |
+|  Inst_vga_ctrl/mBALL_X_POS_REG_reg[5]__2_LDC_i_1_n_0  |                                                                            | Inst_vga_ctrl/mBALL_X_POS_REG_reg[5]__2_LDC_i_2_n_0                        |                1 |              1 |         1.00 |
+|  Inst_vga_ctrl/mBALL_X_POS_REG_reg[4]__2_LDC_i_1_n_0  |                                                                            | Inst_vga_ctrl/mBALL_X_POS_REG_reg[4]__2_LDC_i_2_n_0                        |                1 |              1 |         1.00 |
+|  p_1_in_0                                             |                                                                            | Inst_vga_ctrl/mBALL_Y_POS_REG_reg[11]__2_LDC_i_1_n_0                       |                1 |              1 |         1.00 |
+|  Inst_vga_ctrl/mBALL_Y_POS_REG_reg[8]__2_LDC_i_1_n_0  |                                                                            | Inst_vga_ctrl/mBALL_Y_POS_REG_reg[8]__2_LDC_i_2_n_0                        |                1 |              1 |         1.00 |
+|  Inst_vga_ctrl/mBALL_Y_POS_REG_reg[7]__2_LDC_i_1_n_0  |                                                                            | Inst_vga_ctrl/mBALL_Y_POS_REG_reg[7]__2_LDC_i_2_n_0                        |                1 |              1 |         1.00 |
+|  Inst_vga_ctrl/mBALL_Y_POS_REG_reg[6]__2_LDC_i_1_n_0  |                                                                            | Inst_vga_ctrl/mBALL_Y_POS_REG_reg[6]__2_LDC_i_2_n_0                        |                1 |              1 |         1.00 |
+|  Inst_vga_ctrl/mBALL_Y_POS_REG_reg[5]__2_LDC_i_1_n_0  |                                                                            | Inst_vga_ctrl/mBALL_Y_POS_REG_reg[5]__2_LDC_i_2_n_0                        |                1 |              1 |         1.00 |
+|  Inst_vga_ctrl/mBALL_Y_POS_REG_reg[2]__2_LDC_i_1_n_0  |                                                                            | Inst_vga_ctrl/mBALL_Y_POS_REG_reg[2]__2_LDC_i_2_n_0                        |                1 |              1 |         1.00 |
+|  Inst_vga_ctrl/mBALL_Y_POS_REG_reg[1]__2_LDC_i_1_n_0  |                                                                            | Inst_vga_ctrl/mBALL_Y_POS_REG_reg[1]__2_LDC_i_2_n_0                        |                1 |              1 |         1.00 |
+|  Inst_vga_ctrl/mBALL_Y_POS_REG_reg[0]__2_LDC_i_1_n_0  |                                                                            | Inst_vga_ctrl/mBALL_Y_POS_REG_reg[0]__2_LDC_i_2_n_0                        |                1 |              1 |         1.00 |
+|  Inst_vga_ctrl/mBALL_X_POS_REG_reg[9]__2_LDC_i_1_n_0  |                                                                            | Inst_vga_ctrl/mBALL_X_POS_REG_reg[9]__2_LDC_i_2_n_0                        |                1 |              1 |         1.00 |
+|  Inst_vga_ctrl/mBALL_X_POS_REG_reg[8]__2_LDC_i_1_n_0  |                                                                            | Inst_vga_ctrl/mBALL_X_POS_REG_reg[8]__2_LDC_i_2_n_0                        |                1 |              1 |         1.00 |
+|  Inst_vga_ctrl/mBALL_X_POS_REG_reg[1]__2_LDC_i_1_n_0  |                                                                            | Inst_vga_ctrl/mBALL_X_POS_REG_reg[1]__2_LDC_i_2_n_0                        |                1 |              1 |         1.00 |
+|  p_1_in_0                                             |                                                                            | Inst_vga_ctrl/mBALL_Y_POS_REG_reg[7]__2_LDC_i_2_n_0                        |                1 |              1 |         1.00 |
+|  Inst_vga_ctrl/mBALL_Y_POS_REG_reg[3]__2_LDC_i_1_n_0  |                                                                            | Inst_vga_ctrl/mBALL_Y_POS_REG_reg[3]__2_LDC_i_2_n_0                        |                1 |              1 |         1.00 |
+|  p_1_in_0                                             |                                                                            | Inst_vga_ctrl/mBALL_X_POS_REG_reg[3]__2_LDC_i_2_n_0                        |                1 |              1 |         1.00 |
+|  p_1_in_0                                             |                                                                            | Inst_vga_ctrl/mBALL_Y_POS_REG_reg[4]__2_LDC_i_1_n_0                        |                1 |              1 |         1.00 |
+|  p_1_in_0                                             |                                                                            | Inst_vga_ctrl/mBALL_Y_POS_REG_reg[4]__2_LDC_i_2_n_0                        |                1 |              1 |         1.00 |
+|  p_1_in_0                                             |                                                                            | Inst_vga_ctrl/mBALL_Y_POS_REG_reg[3]__2_LDC_i_1_n_0                        |                1 |              1 |         1.00 |
+|  p_1_in_0                                             |                                                                            | Inst_vga_ctrl/mBALL_Y_POS_REG_reg[11]__2_LDC_i_2_n_0                       |                1 |              1 |         1.00 |
+|  p_1_in_0                                             |                                                                            | Inst_vga_ctrl/mBALL_Y_POS_REG_reg[3]__2_LDC_i_2_n_0                        |                1 |              1 |         1.00 |
+|  p_1_in_0                                             |                                                                            | Inst_vga_ctrl/mBALL_X_POS_REG_reg[10]__2_LDC_i_1_n_0                       |                1 |              1 |         1.00 |
+|  p_1_in_0                                             |                                                                            | Inst_vga_ctrl/mBALL_X_POS_REG_reg[10]__2_LDC_i_2_n_0                       |                1 |              1 |         1.00 |
+|  p_1_in_0                                             |                                                                            | Inst_vga_ctrl/mBALL_X_POS_REG_reg[1]__2_LDC_i_1_n_0                        |                1 |              1 |         1.00 |
+|  p_1_in_0                                             |                                                                            | Inst_vga_ctrl/mBALL_X_POS_REG_reg[8]__2_LDC_i_1_n_0                        |                1 |              1 |         1.00 |
+|  p_1_in_0                                             |                                                                            | Inst_vga_ctrl/mBALL_X_POS_REG_reg[8]__2_LDC_i_2_n_0                        |                1 |              1 |         1.00 |
+|  p_1_in_0                                             |                                                                            | Inst_vga_ctrl/mBALL_X_POS_REG_reg[9]__2_LDC_i_1_n_0                        |                1 |              1 |         1.00 |
+|  p_1_in_0                                             |                                                                            | Inst_vga_ctrl/mBALL_Y_POS_REG_reg[0]__2_LDC_i_1_n_0                        |                1 |              1 |         1.00 |
+|  p_1_in_0                                             |                                                                            | Inst_vga_ctrl/mBALL_Y_POS_REG_reg[8]__2_LDC_i_1_n_0                        |                1 |              1 |         1.00 |
+|  p_1_in_0                                             |                                                                            | Inst_vga_ctrl/mBALL_Y_POS_REG_reg[7]__2_LDC_i_1_n_0                        |                1 |              1 |         1.00 |
+|  p_1_in_0                                             |                                                                            | Inst_vga_ctrl/mBALL_Y_POS_REG_reg[6]__2_LDC_i_2_n_0                        |                1 |              1 |         1.00 |
+|  p_1_in_0                                             |                                                                            | Inst_vga_ctrl/mBALL_Y_POS_REG_reg[6]__2_LDC_i_1_n_0                        |                1 |              1 |         1.00 |
+|  p_1_in_0                                             |                                                                            | Inst_vga_ctrl/mBALL_Y_POS_REG_reg[5]__2_LDC_i_2_n_0                        |                1 |              1 |         1.00 |
+|  p_1_in_0                                             |                                                                            | Inst_vga_ctrl/mBALL_Y_POS_REG_reg[5]__2_LDC_i_1_n_0                        |                1 |              1 |         1.00 |
+|  p_1_in_0                                             |                                                                            | Inst_vga_ctrl/mBALL_X_POS_REG_reg[0]__2_LDC_i_2_n_0                        |                1 |              1 |         1.00 |
+|  p_1_in_0                                             |                                                                            | Inst_vga_ctrl/mBALL_X_POS_REG_reg[9]__2_LDC_i_2_n_0                        |                1 |              1 |         1.00 |
+|  p_1_in_0                                             |                                                                            | Inst_vga_ctrl/mBALL_Y_POS_REG_reg[2]__2_LDC_i_2_n_0                        |                1 |              1 |         1.00 |
+|  p_1_in_0                                             |                                                                            | Inst_vga_ctrl/mBALL_Y_POS_REG_reg[2]__2_LDC_i_1_n_0                        |                1 |              1 |         1.00 |
+|  p_1_in_0                                             |                                                                            | Inst_vga_ctrl/mBALL_Y_POS_REG_reg[1]__2_LDC_i_2_n_0                        |                1 |              1 |         1.00 |
+|  p_1_in_0                                             |                                                                            | Inst_vga_ctrl/mBALL_Y_POS_REG_reg[1]__2_LDC_i_1_n_0                        |                1 |              1 |         1.00 |
+|  p_1_in_0                                             |                                                                            | Inst_vga_ctrl/mBALL_Y_POS_REG_reg[0]__2_LDC_i_2_n_0                        |                1 |              1 |         1.00 |
+|  Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1             |                                                                            | Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/data_inter0                  |                1 |              4 |         4.00 |
+|  Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1             |                                                                            | Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/clk_inter0                   |                1 |              4 |         4.00 |
+|  Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1             | Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/shift_frame                  | Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/reset_bit_count              |                2 |              4 |         2.00 |
+|  CLK_IBUF_BUFG                                        | eqOp2_in                                                                   | tmrVal[3]_i_1_n_0                                                          |                2 |              4 |         2.00 |
+|  CLK_IBUF_BUFG                                        |                                                                            | sendStr[16][0]_i_1_n_0                                                     |                3 |              5 |         1.67 |
+|  CLK_IBUF_BUFG                                        | strIndex                                                                   |                                                                            |                6 |              7 |         1.17 |
+|  Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1             | Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/delay_63clk_count[6]_i_2_n_0 | Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/delay_63clk_count[6]_i_1_n_0 |                2 |              7 |         3.50 |
+|  CLK_IBUF_BUFG                                        | uartSend                                                                   |                                                                            |                1 |              7 |         7.00 |
+|  Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1             | Inst_vga_ctrl/Inst_MouseCtl/write_data                                     |                                                                            |                2 |              8 |         4.00 |
+|  Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1             | Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/load_rx_data                 |                                                                            |                2 |              8 |         4.00 |
+|  Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1             | Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/frame[9]_i_1_n_0             |                                                                            |                3 |             10 |         3.33 |
+|  Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1             | Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/delay_20us_count[10]_i_2_n_0 | Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/delay_20us_count[10]_i_1_n_0 |                3 |             11 |         3.67 |
+|  Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1             | Inst_vga_ctrl/eqOp4_in                                                     | Inst_vga_ctrl/v_cntr_reg0                                                  |                3 |             12 |         4.00 |
+|  Inst_vga_ctrl/clkdiv_reg_n_0_[24]                    |                                                                            | Inst_vga_ctrl/gtOp_inferred__0/i__carry__0_n_2                             |                4 |             12 |         3.00 |
+|  Inst_vga_ctrl/clkdiv_reg_n_0_[24]                    |                                                                            | Inst_vga_ctrl/gtOp                                                         |                4 |             12 |         3.00 |
+|  Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1             |                                                                            | Inst_vga_ctrl/vga_red_reg[3]_i_1_n_0                                       |                2 |             12 |         6.00 |
+|  Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1             |                                                                            | Inst_vga_ctrl/eqOp4_in                                                     |                3 |             12 |         4.00 |
+|  Inst_vga_ctrl/p_0_in                                 |                                                                            | Inst_vga_ctrl/mBALL_X_POS_REG[11]_i_1_n_0                                  |                3 |             12 |         4.00 |
+|  Inst_vga_ctrl/clkdiv_reg_n_0_[23]                    |                                                                            | Inst_vga_ctrl/mBALL_X_POS_REG[11]_i_1_n_0                                  |                3 |             12 |         4.00 |
+|  Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1             | Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/delay_100us_count[0]_i_2_n_0 | Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/clear                        |                4 |             14 |         3.50 |
+|  CLK_IBUF_BUFG                                        |                                                                            | Inst_UART_TX_CTRL/bitTmr                                                   |                4 |             14 |         3.50 |
+|  CLK_IBUF_BUFG                                        |                                                                            | Inst_btn_debounce/sig_cntrs_ary[3][0]_i_1_n_0                              |                4 |             16 |         4.00 |
+|  CLK_IBUF_BUFG                                        |                                                                            | Inst_btn_debounce/sig_cntrs_ary[1][0]_i_1_n_0                              |                4 |             16 |         4.00 |
+|  CLK_IBUF_BUFG                                        |                                                                            | Inst_btn_debounce/sig_cntrs_ary[0][0]_i_1_n_0                              |                4 |             16 |         4.00 |
+|  CLK_IBUF_BUFG                                        |                                                                            | Inst_btn_debounce/sig_cntrs_ary[2][0]_i_1_n_0                              |                4 |             16 |         4.00 |
+|  CLK_IBUF_BUFG                                        |                                                                            | Inst_btn_debounce/sig_cntrs_ary[4][0]_i_1_n_0                              |                4 |             16 |         4.00 |
+|  CLK_IBUF_BUFG                                        |                                                                            |                                                                            |                7 |             17 |         2.43 |
+|  CLK_IBUF_BUFG                                        |                                                                            | reset_cntr0                                                                |                5 |             18 |         3.60 |
+|  Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1             |                                                                            | Inst_vga_ctrl/Inst_MouseCtl/reset_timeout_cnt_reg_n_0                      |                7 |             24 |         3.43 |
+|  Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1             |                                                                            | Inst_vga_ctrl/Inst_MouseCtl/reset_periodic_check_cnt__0                    |                7 |             26 |         3.71 |
+|  CLK_IBUF_BUFG                                        |                                                                            | tmrCntr0                                                                   |                7 |             27 |         3.86 |
+|  CLK_IBUF_BUFG                                        | strIndex                                                                   | strIndex0                                                                  |                8 |             31 |         3.88 |
+|  CLK_IBUF_BUFG                                        | Inst_UART_TX_CTRL/txBit_i_2_n_0                                            | Inst_UART_TX_CTRL/READY                                                    |                9 |             32 |         3.56 |
+|  Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1             |                                                                            |                                                                            |               51 |            156 |         3.06 |
++-------------------------------------------------------+----------------------------------------------------------------------------+----------------------------------------------------------------------------+------------------+----------------+--------------+
+
+

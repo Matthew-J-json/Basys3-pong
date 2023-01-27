@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1637113231">
+  <File Type="VDS-TIMING-PB" Name="GPIO_demo_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="GPIO_demo_timing_summary_synth.rpt"/>
+  <File Type="RDS-DCP" Name="GPIO_demo.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="GPIO_demo_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="GPIO_demo_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="GPIO_demo_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="GPIO_demo.vds"/>
+  <File Type="REPORTS-TCL" Name="GPIO_demo_reports.tcl"/>
+  <File Type="PA-TCL" Name="GPIO_demo.tcl"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/MouseCtl.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Downloads/MouseCtl.vhd"/>
+        <Attr Name="ImportTime" Val="1636394681"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/MouseDisplay.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Downloads/MouseDisplay.vhd"/>
+        <Attr Name="ImportTime" Val="1636394686"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/MovingBall.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/PingPong.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/Ps2Interface.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Downloads/Ps2Interface.vhd"/>
+        <Attr Name="ImportTime" Val="1636394690"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/UART_TX_CTRL.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Downloads/UART_TX_CTRL.vhd"/>
+        <Attr Name="ImportTime" Val="1636394695"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/clk_wiz_0.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Downloads/clk_wiz_0.vhd"/>
+        <Attr Name="ImportTime" Val="1636394662"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/clk_wiz_0_clk_wiz.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Downloads/clk_wiz_0_clk_wiz.vhd"/>
+        <Attr Name="ImportTime" Val="1636394667"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/debouncer.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Downloads/debouncer.vhd"/>
+        <Attr Name="ImportTime" Val="1636394672"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Downloads/vga_ctrl.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/GPIO_Demo.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Downloads/GPIO_Demo.vhd"/>
+        <Attr Name="ImportTime" Val="1636394677"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="GPIO_demo"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/Downloads/P999_GPIOdemo.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Downloads/P999_GPIOdemo.xdc"/>
+        <Attr Name="ImportTime" Val="1636394620"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>
